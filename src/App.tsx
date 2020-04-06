@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react'
+
+import data from './data.json'
+import { Search } from './components/search'
+import { Table } from './components/table'
+import { useSortAndSearch } from './hooks/useSortAndSearch'
+import { useParseJson } from './hooks/useParseJson'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [searchValue, setSearchValue] = React.useState<string>('')
+
+	return (
+		<div>
+			<h1>Kinda cool tool</h1>
+			<Search searchValue={searchValue} setSearchValue={setSearchValue} />
+			<Table data={useSortAndSearch(searchValue, useParseJson(data))} />
+		</div>
+	)
 }
 
-export default App;
+export default App

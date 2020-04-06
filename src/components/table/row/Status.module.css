@@ -1,0 +1,45 @@
+@value colors: "../../styles/colors.css";
+@value green from colors;
+
+.status {
+	margin-left: 20px;
+}
+
+.status_on {
+	text-align: center;
+	text-transform: uppercase;
+	width: 5rem;
+	background-color: green;
+	color:white;
+	height: 1.2rem;
+	border-radius: 52px;
+	margin: auto;
+}
+.status_off {
+	text-align: center;
+	text-transform: uppercase;
+	width: 5rem;
+	background-color: grey;
+	color:white;
+	height: 1.2rem;
+	border-radius: 52px;
+	margin: auto;
+}
+
+.status_lock {
+	font-size: 10px;
+	text-align: center;
+	width: 5rem;
+	height: 1.2rem;
+	color:black;
+	margin: auto;
+}
+.status_error {
+	text-align: center;
+	width: 5rem;
+	height: 1.2rem;
+	text-transform: uppercase;
+	background-color: mediumvioletred;
+	color:white;
+	margin: auto;
+}

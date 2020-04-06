@@ -1,0 +1,10 @@
+@value colors: "../../styles/colors.css";
+@value yellow from colors;
+
+.heading {
+	text-align: center;
+}
+
+.type {
+	color: yellow;
+}

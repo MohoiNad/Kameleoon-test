@@ -1,0 +1,10 @@
+@value colors: "../../styles/colors.css";
+@value yellow, green from colors;
+.row {
+	height: 70px;
+	padding:20px;
+}
+.row:hover {
+	box-shadow: rgba(168, 168, 168, 0.7) 0 0 6px 2px;
+	transition: box-shadow 0.3s ease-in;
+}

@@ -1,0 +1,81 @@
+@value colors: "../styles/colors.css";
+@value green from colors;
+
+.table {
+    border-collapse:collapse ;
+    margin:  0 20px;
+    background-color:white;
+}
+
+ tr {
+    border-bottom: 1px solid #cccccc;
+}
+
+.table > thead > tr > th:nth-child(1){
+    width:50%;
+}
+
+.table > thead > tr  > th:nth-child(2){
+    width:9%;
+}
+
+.table > thead > tr  > th:nth-child(3){
+    width:6%;
+}
+
+.table > thead > tr  > th:last-child{
+
+    width:11%;
+}
+.table > thead > tr  > th:nth-child(1) .h2{
+    display:inline-block;
+}
+.table > thead > tr  > th:nth-child(1){
+    text-align: left;
+    display: table-cell;
+    padding-left: 20px;
+    height: 50px
+}
+
+
+.table > tbody > tr > th:last-child{
+    border-collapse:initial;
+    border:0;
+
+}
+
+.iconContainer {
+    padding-left: 10px;
+    display: inline-block;
+
+}
+.iconContainer > svg{
+    display: block;
+    margin: -8px 0;
+    padding-right: 20px;
+}
+.iconUp.active {
+    cursor:pointer;
+     color:green;
+ }
+
+.iconUp {
+    cursor:pointer;
+    color:grey;
+}
+
+.iconDown.active {
+    cursor:pointer;
+     color:grey;
+ }
+.iconDown {
+    cursor:pointer;
+    color:green;
+}
+.h2 {
+    font-size: 16px;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    color: green;
+    font-style: italic;
+}

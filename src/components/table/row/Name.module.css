@@ -1,0 +1,8 @@
+@value colors: "../../styles/colors.css";
+@value yellow, green from colors;
+
+.name {
+	padding-left: 20px;
+	text-align: left;
+	font-size: 1.1rem;
+}
